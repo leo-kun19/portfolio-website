@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Alfonso Tarigan — Developer & Builder</title>
+    <meta name="description"
+        content="Leo Alfonso Tarigan is a full stack developer and AI enthusiast based in North Sumatra, building elegant digital experiences.">
+    <meta property="og:title" content="Leo Alfonso Tarigan — Developer & Builder">
+    <meta property="og:description" content="Full Stack Developer and AI Enthusiast crafting digital solutions.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+        (function () { var t = localStorage.getItem('theme'); if (!t) { t = window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light'; } document.documentElement.setAttribute('data-theme', t); })();
+    </script>
+</head>
+
+<body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <header id="site-header">
+        <div class="header-inner">
+            <a href="#" class="logo-mark" aria-label="Home">
+                <svg class="logo-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <text x="10" y="26" font-family="Georgia, serif" font-size="22" font-weight="400"
+                        font-style="italic" fill="currentColor">L</text>
+                </svg>
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#intro" data-scroll-to="intro" class="nav-link">Intro</a></li>
+                    <li><a href="#about" data-scroll-to="about" class="nav-link">About</a></li>
+                    <li><a href="#craft" data-scroll-to="craft" class="nav-link">Craft</a></li>
+                    <li><a href="#live" data-scroll-to="live" class="nav-link">Live</a></li>
+                    <li><a href="#works" data-scroll-to="works" class="nav-link">Works</a></li>
+                    <li><a href="#reach" data-scroll-to="reach" class="nav-link">Reach</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+                <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+                <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+            </button>
+            <button class="menu-trigger" id="menu-trigger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="section-intro">
+            <div class="intro-grid">
+                <div class="intro-col-text">
+                    <span class="label-tag">Full Stack Developer</span>
+                    <h1 class="intro-headline" id="intro-headline">
+                        <span class="hl-line">Building</span>
+                        <span class="hl-line">things that</span>
+                        <span class="hl-line italic">matter.</span>
+                    </h1>
+                    <div class="intro-meta">
+                        <div class="meta-item">
+                            <span class="meta-value">3+</span>
+                            <span class="meta-label">Years Building</span>
+                        </div>
+                        <div class="meta-divider" aria-hidden="true"></div>
+                        <div class="meta-item">
+                            <span class="meta-value">30+</span>
+                            <span class="meta-label">Projects Shipped</span>
+                        </div>
+                        <div class="meta-divider" aria-hidden="true"></div>
+                        <div class="meta-item">
+                            <span class="meta-value">3.9</span>
+                            <span class="meta-label">GPA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-col-image">
+                    <div class="image-frame">
+                        <img src="profile-image.png" alt="Leo Alfonso Tarigan" loading="eager">
+                        <div class="image-caption" aria-hidden="true">Leo Alfonso Tarigan / 2025</div>
+                    </div>
+                </div>
+                <div class="intro-col-aside">
+                    <p class="aside-text">I craft full-stack applications and experiment with machine learning — turning
+                        complex problems into clean, working software. Creator of <a href="https://seikouverse.my.id"
+                            target="_blank" class="aside-highlight">seikouverse.my.id</a>.</p>
+                    <div class="aside-links">
+                        <a href="https://www.linkedin.com/in/leo-alfonso-17124a257/" target="_blank" class="icon-link"
+                            id="linkedin-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/leo-kun19" target="_blank" class="icon-link" id="github-link"
+                            aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+                        </a>
+                        <a href="mailto:leoalfonso2003@gmail.com" class="icon-link" id="email-link" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section-about">
+            <div class="about-layout">
+                <div class="about-label">
+                    <span class="vertical-label">About</span>
+                    <span class="label-number">01</span>
+                </div>
+                <div class="about-content reveal-block">
+                    <div class="about-pull-quote">
+                        <p>Not just writing code — shaping experiences that people actually want to use.</p>
+                    </div>
+                    <div class="about-body">
+                        <p>I am Leo Alfonso Tarigan, a developer who believes great software starts with genuine
+                            curiosity. Currently pursuing Computer Science at the University of North Sumatra, I split
+                            my time between building full-stack web applications and exploring how machine learning can
+                            solve real problems.</p>
+                        <p>Four years ago I wrote my first line of server code. Since then, I have shipped over fifty
+                            projects spanning e-commerce platforms, data dashboards, attendance systems, and AI-powered
+                            tools — including <a href="https://seikouverse.my.id" target="_blank">seikouverse.my.id</a>.
+                            Every project taught me something the last one could not.</p>
+                        <p>I gravitate toward the entire stack — database schema to pixel-perfect frontend — because
+                            details at every layer compound into software that feels right.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Python</span>
+                <span class="dot"></span>
+                <span>JavaScript</span>
+                <span class="dot"></span>
+                <span>PHP</span>
+                <span class="dot"></span>
+                <span>Java</span>
+                <span class="dot"></span>
+                <span>Laravel</span>
+                <span class="dot"></span>
+                <span>Flask</span>
+                <span class="dot"></span>
+                <span>SQL</span>
+                <span class="dot"></span>
+                <span>MongoDB</span>
+                <span class="dot"></span>
+                <span>Bootstrap</span>
+                <span class="dot"></span>
+                <span>Tableau</span>
+                <span class="dot"></span>
+                <span>Python</span>
+                <span class="dot"></span>
+                <span>JavaScript</span>
+                <span class="dot"></span>
+                <span>PHP</span>
+                <span class="dot"></span>
+                <span>Java</span>
+                <span class="dot"></span>
+                <span>Laravel</span>
+                <span class="dot"></span>
+                <span>Flask</span>
+                <span class="dot"></span>
+                <span>SQL</span>
+                <span class="dot"></span>
+                <span>MongoDB</span>
+                <span class="dot"></span>
+                <span>Bootstrap</span>
+                <span class="dot"></span>
+                <span>Tableau</span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <section id="craft" class="section-craft">
+            <div class="craft-layout">
+                <div class="craft-header">
+                    <span class="label-number">02</span>
+                    <h2 class="craft-title">Technical<br><em>Craft</em></h2>
+                </div>
+                <div class="craft-grid">
+                    <div class="craft-card reveal-up" id="skill-languages">
+                        <span class="craft-card-number">01</span>
+                        <h3>Languages</h3>
+                        <ul class="craft-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="craft-card craft-card-tall reveal-up" id="skill-frameworks">
+                        <span class="craft-card-number">02</span>
+                        <h3>Frameworks & Tools</h3>
+                        <ul class="craft-list">
+                            <li>Laravel</li>
+                            <li>Flask</li>
+                            <li>Express.js</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="craft-card reveal-up" id="skill-data">
+                        <span class="craft-card-number">03</span>
+                        <h3>Data & ML</h3>
+                        <ul class="craft-list">
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Tableau</li>
+                            <li>TensorFlow</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                    <div class="craft-card reveal-up" id="skill-practices">
+                        <span class="craft-card-number">04</span>
+                        <h3>Practices</h3>
+                        <ul class="craft-list">
+                            <li>REST API Design</li>
+                            <li>Git Version Control</li>
+                            <li>Agile Workflow</li>
+                            <li>Clean Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="live" class="section-live">
+            <div class="live-layout">
+                <div class="live-header">
+                    <span class="label-number">03</span>
+                    <h2 class="live-title">Live<br><em>Products</em></h2>
+                    <p class="live-subtitle">Shipped, hosted, and running in production right now.</p>
+                </div>
+                <div class="live-grid">
+                    <a href="https://www.seikoupay.my.id" target="_blank" rel="noopener noreferrer"
+                        class="live-card live-card-feature reveal-up">
+                        <div class="live-card-body">
+                            <div class="live-card-top">
+                                <span class="live-status"><span class="live-dot" aria-hidden="true"></span>Live</span>
+                                <span class="live-domain">seikoupay.my.id</span>
+                            </div>
+                            <h3>SeikouPay</h3>
+                            <p>Digital top-up platform for mobile credit, data packages, PLN tokens, e-wallets, and game
+                                vouchers. Instant processing with real-time transaction tracking and a flash-sale
+                                engine.</p>
+                            <div class="live-tags">
+                                <span class="live-tag">Full Stack</span>
+                                <span class="live-tag">Payments</span>
+                                <span class="live-tag">Dashboard</span>
+                            </div>
+                        </div>
+                        <div class="live-media">
+                            <div class="live-browser">
+                                <div class="live-browser-bar" aria-hidden="true">
+                                    <span class="live-browser-dot"></span>
+                                    <span class="live-browser-dot"></span>
+                                    <span class="live-browser-dot"></span>
+                                    <span class="live-browser-url">www.seikoupay.my.id</span>
+                                </div>
+                                <div class="live-shot-wrap">
+                                    <img class="live-shot" alt="Preview of the SeikouPay website" loading="lazy"
+                                        data-shot="https://www.seikoupay.my.id"
+                                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.seikoupay.my.id?w=1280&h=860">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="live-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </a>
+                    <a href="https://link.seikoupay.my.id" target="_blank" rel="noopener noreferrer"
+                        class="live-card reveal-up">
+                        <div class="live-browser">
+                            <div class="live-browser-bar" aria-hidden="true">
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-url">link.seikoupay.my.id</span>
+                            </div>
+                            <div class="live-shot-wrap">
+                                <img class="live-shot" alt="Preview of the SeikouLink website" loading="lazy"
+                                    data-shot="https://link.seikoupay.my.id"
+                                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flink.seikoupay.my.id?w=1280&h=860">
+                            </div>
+                        </div>
+                        <div class="live-card-top">
+                            <span class="live-status"><span class="live-dot" aria-hidden="true"></span>Live</span>
+                            <span class="live-domain">link.seikoupay.my.id</span>
+                        </div>
+                        <h3>SeikouLink</h3>
+                        <p>A self-hosted link-in-bio platform with unlimited links, click analytics, custom themes, and
+                            personal subdomains. A free, no-subscription alternative to Linktree.</p>
+                        <div class="live-tags">
+                            <span class="live-tag">SaaS</span>
+                            <span class="live-tag">Analytics</span>
+                        </div>
+                        <span class="live-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </a>
+                    <a href="https://booth.seikoupay.my.id" target="_blank" rel="noopener noreferrer"
+                        class="live-card reveal-up">
+                        <div class="live-browser">
+                            <div class="live-browser-bar" aria-hidden="true">
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-url">booth.seikoupay.my.id</span>
+                            </div>
+                            <div class="live-shot-wrap">
+                                <img class="live-shot" alt="Preview of the Mochi Booth website" loading="lazy"
+                                    data-shot="https://booth.seikoupay.my.id"
+                                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fbooth.seikoupay.my.id?w=1280&h=860">
+                            </div>
+                        </div>
+                        <div class="live-card-top">
+                            <span class="live-status"><span class="live-dot" aria-hidden="true"></span>Live</span>
+                            <span class="live-domain">booth.seikoupay.my.id</span>
+                        </div>
+                        <h3>Mochi Booth</h3>
+                        <p>A browser-based analog photo booth. Capture sequences with your camera, choose strip
+                            templates and cinematic filters, then decorate and download — all processed on-device.</p>
+                        <div class="live-tags">
+                            <span class="live-tag">Web App</span>
+                            <span class="live-tag">Canvas</span>
+                            <span class="live-tag">Camera</span>
+                        </div>
+                        <span class="live-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </a>
+                    <a href="https://sajianmakankita.netlify.app" target="_blank" rel="noopener noreferrer"
+                        class="live-card reveal-up">
+                        <div class="live-browser">
+                            <div class="live-browser-bar" aria-hidden="true">
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-dot"></span>
+                                <span class="live-browser-url">sajianmakankita.netlify.app</span>
+                            </div>
+                            <div class="live-shot-wrap">
+                                <img class="live-shot" alt="Preview of the SajiPlan website" loading="lazy"
+                                    data-shot="https://sajianmakankita.netlify.app"
+                                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fsajianmakankita.netlify.app?w=1280&h=860">
+                            </div>
+                        </div>
+                        <div class="live-card-top">
+                            <span class="live-status"><span class="live-dot" aria-hidden="true"></span>Live</span>
+                            <span class="live-domain">sajianmakankita.netlify.app</span>
+                        </div>
+                        <h3>SajiPlan</h3>
+                        <p>A weekly meal planner that turns pinned recipes into a self-assembling shopping list. Plan
+                            seven days across breakfast, lunch, and dinner without the waste.</p>
+                        <div class="live-tags">
+                            <span class="live-tag">Web App</span>
+                            <span class="live-tag">Productivity</span>
+                        </div>
+                        <span class="live-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section-works">
+            <div class="works-layout">
+                <div class="works-header">
+                    <span class="label-number">04</span>
+                    <h2 class="works-title">Selected<br><em>Works</em></h2>
+                    <p class="works-subtitle">Projects pulled from GitHub, most recent first.</p>
+                </div>
+                <div class="works-list" id="works-list">
+                    <div class="works-loading">
+                        <div class="loading-spinner" aria-hidden="true"></div>
+                        <span>Fetching repositories...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reach" class="section-reach">
+            <div class="reach-layout">
+                <div class="reach-left">
+                    <span class="label-number">05</span>
+                    <h2 class="reach-headline">Let's build<br>something<br><em>together.</em></h2>
+                    <div class="reach-info">
+                        <div class="reach-detail">
+                            <span class="reach-label">Email</span>
+                            <a href="mailto:leoalfonso2003@gmail.com" id="contact-email">leoalfonso2003@gmail.com</a>
+                        </div>
+                        <div class="reach-detail">
+                            <span class="reach-label">Based in</span>
+                            <span>North Sumatra, Indonesia</span>
+                        </div>
+                        <div class="reach-detail">
+                            <span class="reach-label">Links</span>
+                            <div class="reach-links">
+                                <a href="https://www.linkedin.com/in/leo-alfonso-17124a257/" target="_blank"
+                                    id="contact-linkedin">LinkedIn</a>
+                                <a href="https://github.com/leo-kun19" target="_blank" id="contact-github">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reach-right">
+                    <form action="https://formspree.io/f/xpwrekob" method="POST" class="reach-form" id="contact-form">
+                        <div class="form-field">
+                            <label for="field-name">Name</label>
+                            <input type="text" name="name" id="field-name" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="field-email">Email</label>
+                            <input type="email" name="email" id="field-email" required autocomplete="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="field-message">Message</label>
+                            <textarea name="message" id="field-message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <span>Send Message</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2025 Leo Alfonso Tarigan</span>
+            <a href="#intro" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                <i data-lucide="arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+</body>
+
+</html>

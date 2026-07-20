@@ -1,0 +1,16 @@
+
+# safe publish
+node_modules/
+vendor/
+dist/
+build/
+.env
+.env.*
+*.pem
+*.key
+*.sql
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
